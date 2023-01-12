@@ -1,4 +1,5 @@
 # @beesley/bags-of-cache
+[![Build, Test & Publish Main](https://github.com/bbeesley/bags-of-cache/actions/workflows/build-test-on-push.yml/badge.svg)](https://github.com/bbeesley/bags-of-cache/actions/workflows/build-test-on-push.yml) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 This package contains in memory cache tools. A generic in memory cache class is available to be used by other tools.
 
