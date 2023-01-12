@@ -1,0 +1,10 @@
+{
+  "entryPoints": ["src/index.ts", "src/cacheing-client.ts", "src/dynamo-client.ts"],
+  "includeVersion": true,
+  "tsconfig": "./tsconfig.json",
+  "out": "./docs",
+  "theme": "markdown",
+  "name": "@beesley/bags-of-cache",
+  "hideGenerator": true,
+  "gitRevision": "main"
+}

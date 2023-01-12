@@ -1,3 +1,5 @@
+@beesley/bags-of-cache - v0.0.0 / [Modules](modules.md)
+
 # @beesley/bags-of-cache
 
 This package contains in memory cache tools. A generic in memory cache class is available to be used by other tools.
@@ -187,7 +189,7 @@ const item = await client.getItem({
 
 #### emptyResponseCacheTime
 
-[src/dynamo-client.ts:23-23](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L23-L23 "Source code on GitHub")
+[packages/atl-cacheing-client/src/dynamo-client.ts:20-20](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L20-L20 "Source code on GitHub")
 
 When we get no items back from a query we will not retry the query within this time (ms)
 
@@ -195,7 +197,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### queryConcurrency
 
-[src/dynamo-client.ts:30-30](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L30-L30 "Source code on GitHub")
+[packages/atl-cacheing-client/src/dynamo-client.ts:27-27](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L27-L27 "Source code on GitHub")
 
 Limit concurrently sent queries to this value
 
@@ -203,7 +205,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### getConcurrency
 
-[src/dynamo-client.ts:37-37](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L37-L37 "Source code on GitHub")
+[packages/atl-cacheing-client/src/dynamo-client.ts:34-34](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L34-L34 "Source code on GitHub")
 
 Limit concurrent getItem calls to this value
 
@@ -211,27 +213,15 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### DynamoCachedClient
 
-[src/dynamo-client.ts:47-173](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L47-L173 "Source code on GitHub")
+[packages/atl-cacheing-client/src/dynamo-client.ts:44-171](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L44-L171 "Source code on GitHub")
 
 **Extends CacheingClient**
 
 Client for dynamo tables. Makes dynamo requests and caches the results.
 
-##### getItem
-
-[src/dynamo-client.ts:82-109](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L82-L109 "Source code on GitHub")
-
-Gets a single item from the table by key and caches the result
-
-###### Parameters
-
-*   `key` **Record<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String), any>** The dynamo key object
-
-Returns **any** {(Promise\<T | undefined>)}
-
 ##### query
 
-[src/dynamo-client.ts:119-133](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L119-L133 "Source code on GitHub")
+[packages/atl-cacheing-client/src/dynamo-client.ts:120-134](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L120-L134 "Source code on GitHub")
 
 Sends an arbitrary dynamo query, cacheing the results
 
@@ -240,3 +230,15 @@ Sends an arbitrary dynamo query, cacheing the results
 *   `input` **Partial\<QueryCommandInput>** The dynamo query command input
 
 Returns **any** {Promise\<T\[]>}
+
+##### getItem
+
+[packages/atl-cacheing-client/src/dynamo-client.ts:144-170](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L144-L170 "Source code on GitHub")
+
+Gets a single item from the table by key and caches the result
+
+###### Parameters
+
+*   `key` **Record<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String), any>** The dynamo key object
+
+Returns **any** {(Promise\<T | undefined>)}
