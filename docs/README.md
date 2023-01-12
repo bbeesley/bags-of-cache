@@ -1,36 +1,37 @@
-@beesley/bags-of-cache - v0.0.0 / [Modules](modules.md)
+@beesley/bags-of-cache - v1.0.0 / [Modules](modules.md)
 
 # @beesley/bags-of-cache
+[![Build, Test & Publish Main](https://github.com/bbeesley/bags-of-cache/actions/workflows/build-test-on-push.yml/badge.svg)](https://github.com/bbeesley/bags-of-cache/actions/workflows/build-test-on-push.yml) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![semantic-release: angular](https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release)](https://github.com/semantic-release/semantic-release)
 
 This package contains in memory cache tools. A generic in memory cache class is available to be used by other tools.
 
-*   [@beesley/bags-of-cache](#beesleybags-of-cache)
-    *   [Cached Client](#cached-client)
-        *   [Caveats](#caveats)
-        *   [Usage](#usage)
-        *   [Client API](#client-api)
-            *   [CacheingClient](#cacheingclient)
-                *   [stop](#stop)
-                *   [get](#get)
-                    *   [Parameters](#parameters)
-                *   [set](#set)
-                    *   [Parameters](#parameters-1)
-                *   [createCacheKey](#createcachekey)
-                    *   [Parameters](#parameters-2)
-                *   [memoise](#memoise)
-                    *   [Parameters](#parameters-3)
-    *   [Cached Dynamo Client](#cached-dynamo-client)
-        *   [Caveats](#caveats-1)
-        *   [Usage](#usage-1)
-        *   [Dynamo API](#dynamo-api)
-            *   [emptyResponseCacheTime](#emptyresponsecachetime)
-            *   [queryConcurrency](#queryconcurrency)
-            *   [getConcurrency](#getconcurrency)
-            *   [DynamoCachedClient](#dynamocachedclient)
-                *   [query](#query)
-                    *   [Parameters](#parameters-4)
-                *   [getItem](#getitem)
-                    *   [Parameters](#parameters-5)
+- [@beesley/bags-of-cache](#beesleybags-of-cache)
+  - [Cached Client](#cached-client)
+    - [Caveats](#caveats)
+    - [Usage](#usage)
+    - [Client API](#client-api)
+      - [CacheingClient](#cacheingclient)
+        - [get](#get)
+          - [Parameters](#parameters)
+        - [memoise](#memoise)
+          - [Parameters](#parameters-1)
+        - [set](#set)
+          - [Parameters](#parameters-2)
+        - [stop](#stop)
+        - [createCacheKey](#createcachekey)
+          - [Parameters](#parameters-3)
+  - [Cached Dynamo Client](#cached-dynamo-client)
+    - [Caveats](#caveats-1)
+    - [Usage](#usage-1)
+    - [Dynamo API](#dynamo-api)
+      - [emptyResponseCacheTime](#emptyresponsecachetime)
+      - [queryConcurrency](#queryconcurrency)
+      - [getConcurrency](#getconcurrency)
+      - [DynamoCachedClient](#dynamocachedclient)
+        - [getItem](#getitem)
+          - [Parameters](#parameters-4)
+        - [query](#query)
+          - [Parameters](#parameters-5)
 
 ## Cached Client
 
@@ -179,7 +180,7 @@ const configItems = await client.query({
 // get an arbitrary item, leveraging the in memory cache
 const item = await client.getItem({
   country: 'de',
-  pk: 'config_RailDefinitionsFixture_*_de_c_default_',
+  pk: 'foo',
 });
 ```
 
@@ -189,7 +190,7 @@ const item = await client.getItem({
 
 #### emptyResponseCacheTime
 
-[packages/atl-cacheing-client/src/dynamo-client.ts:20-20](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L20-L20 "Source code on GitHub")
+[src/dynamo-client.ts:23-23](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L23-L23 "Source code on GitHub")
 
 When we get no items back from a query we will not retry the query within this time (ms)
 
@@ -197,7 +198,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### queryConcurrency
 
-[packages/atl-cacheing-client/src/dynamo-client.ts:27-27](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L27-L27 "Source code on GitHub")
+[src/dynamo-client.ts:30-30](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L30-L30 "Source code on GitHub")
 
 Limit concurrently sent queries to this value
 
@@ -205,7 +206,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### getConcurrency
 
-[packages/atl-cacheing-client/src/dynamo-client.ts:34-34](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L34-L34 "Source code on GitHub")
+[src/dynamo-client.ts:37-37](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L37-L37 "Source code on GitHub")
 
 Limit concurrent getItem calls to this value
 
@@ -213,27 +214,15 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### DynamoCachedClient
 
-[packages/atl-cacheing-client/src/dynamo-client.ts:44-171](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L44-L171 "Source code on GitHub")
+[src/dynamo-client.ts:47-173](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L47-L173 "Source code on GitHub")
 
 **Extends CacheingClient**
 
 Client for dynamo tables. Makes dynamo requests and caches the results.
 
-##### query
-
-[packages/atl-cacheing-client/src/dynamo-client.ts:120-134](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L120-L134 "Source code on GitHub")
-
-Sends an arbitrary dynamo query, cacheing the results
-
-###### Parameters
-
-*   `input` **Partial\<QueryCommandInput>** The dynamo query command input
-
-Returns **any** {Promise\<T\[]>}
-
 ##### getItem
 
-[packages/atl-cacheing-client/src/dynamo-client.ts:144-170](https://github.com/getndazn/atlantis-utils/blob/6d4ab2eb22d84c1ea8fc5c825fd3daa20b2e090e/packages/atl-cacheing-client/src/dynamo-client.ts#L144-L170 "Source code on GitHub")
+[src/dynamo-client.ts:82-109](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L82-L109 "Source code on GitHub")
 
 Gets a single item from the table by key and caches the result
 
@@ -242,3 +231,15 @@ Gets a single item from the table by key and caches the result
 *   `key` **Record<[string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String), any>** The dynamo key object
 
 Returns **any** {(Promise\<T | undefined>)}
+
+##### query
+
+[src/dynamo-client.ts:119-133](https://github.com/bbeesley/bags-of-cache/blob/c25486e7861143f9c3fe9d0e594c131dde0c89ce/src/dynamo-client.ts#L119-L133 "Source code on GitHub")
+
+Sends an arbitrary dynamo query, cacheing the results
+
+###### Parameters
+
+*   `input` **Partial\<QueryCommandInput>** The dynamo query command input
+
+Returns **any** {Promise\<T\[]>}

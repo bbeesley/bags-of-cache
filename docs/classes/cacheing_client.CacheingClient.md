@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v0.0.0](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
+[@beesley/bags-of-cache - v1.0.0](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
 
 # Class: CacheingClient
 
@@ -54,7 +54,7 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:26
+[cacheing-client.ts:26](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L26)
 
 ## Properties
 
@@ -64,7 +64,7 @@ cacheing-client.ts:26
 
 #### Defined in
 
-cacheing-client.ts:18
+[cacheing-client.ts:18](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L18)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-cacheing-client.ts:19
+[cacheing-client.ts:19](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L19)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-cacheing-client.ts:17
+[cacheing-client.ts:17](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L17)
 
 ## Methods
 
@@ -112,7 +112,7 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:104
+[cacheing-client.ts:104](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L104)
 
 ___
 
@@ -140,7 +140,7 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:46
+[cacheing-client.ts:46](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L46)
 
 ___
 
@@ -174,7 +174,7 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:59
+[cacheing-client.ts:59](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L59)
 
 ___
 
@@ -202,7 +202,7 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:81
+[cacheing-client.ts:81](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L81)
 
 ___
 
@@ -222,4 +222,4 @@ CacheingClient
 
 #### Defined in
 
-cacheing-client.ts:92
+[cacheing-client.ts:92](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L92)

@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v0.0.0](../README.md) / [Modules](../modules.md) / cacheing-client
+[@beesley/bags-of-cache - v1.0.0](../README.md) / [Modules](../modules.md) / cacheing-client
 
 # Module: cacheing-client
 
@@ -30,4 +30,4 @@
 
 #### Defined in
 
-cacheing-client.ts:5
+[cacheing-client.ts:5](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L5)
