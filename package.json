@@ -50,6 +50,7 @@
     "test:unit": "ava 'src/*.unit.test*'",
     "test:int": "ava 'src/*.int.test*'",
     "test": "npm run test:unit",
+    "prerelease": "npm run documentation",
     "release": "npx semantic-release"
   },
   "repository": {
@@ -222,6 +223,7 @@
         "@semantic-release/git",
         {
           "assets": [
+            "docs/**",
             "package.json",
             "CHANGELOG.md",
             "README.md"
