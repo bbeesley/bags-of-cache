@@ -2,33 +2,33 @@
 
 This package contains in memory cache tools. A generic in memory cache class is available to be used by other tools.
 
-*   [@beesley/bags-of-cache](#beesleybags-of-cache)
-    *   [Cached Client](#cached-client)
-        *   [Caveats](#caveats)
-        *   [Usage](#usage)
-        *   [Client API](#client-api)
-            *   [CacheingClient](#cacheingclient)
-                *   [stop](#stop)
-                *   [get](#get)
-                    *   [Parameters](#parameters)
-                *   [set](#set)
-                    *   [Parameters](#parameters-1)
-                *   [createCacheKey](#createcachekey)
-                    *   [Parameters](#parameters-2)
-                *   [memoise](#memoise)
-                    *   [Parameters](#parameters-3)
-    *   [Cached Dynamo Client](#cached-dynamo-client)
-        *   [Caveats](#caveats-1)
-        *   [Usage](#usage-1)
-        *   [Dynamo API](#dynamo-api)
-            *   [emptyResponseCacheTime](#emptyresponsecachetime)
-            *   [queryConcurrency](#queryconcurrency)
-            *   [getConcurrency](#getconcurrency)
-            *   [DynamoCachedClient](#dynamocachedclient)
-                *   [query](#query)
-                    *   [Parameters](#parameters-4)
-                *   [getItem](#getitem)
-                    *   [Parameters](#parameters-5)
+- [@beesley/bags-of-cache](#beesleybags-of-cache)
+  - [Cached Client](#cached-client)
+    - [Caveats](#caveats)
+    - [Usage](#usage)
+    - [Client API](#client-api)
+      - [CacheingClient](#cacheingclient)
+        - [get](#get)
+          - [Parameters](#parameters)
+        - [memoise](#memoise)
+          - [Parameters](#parameters-1)
+        - [set](#set)
+          - [Parameters](#parameters-2)
+        - [stop](#stop)
+        - [createCacheKey](#createcachekey)
+          - [Parameters](#parameters-3)
+  - [Cached Dynamo Client](#cached-dynamo-client)
+    - [Caveats](#caveats-1)
+    - [Usage](#usage-1)
+    - [Dynamo API](#dynamo-api)
+      - [emptyResponseCacheTime](#emptyresponsecachetime)
+      - [queryConcurrency](#queryconcurrency)
+      - [getConcurrency](#getconcurrency)
+      - [DynamoCachedClient](#dynamocachedclient)
+        - [getItem](#getitem)
+          - [Parameters](#parameters-4)
+        - [query](#query)
+          - [Parameters](#parameters-5)
 
 ## Cached Client
 
@@ -177,7 +177,7 @@ const configItems = await client.query({
 // get an arbitrary item, leveraging the in memory cache
 const item = await client.getItem({
   country: 'de',
-  pk: 'config_RailDefinitionsFixture_*_de_c_default_',
+  pk: 'foo',
 });
 ```
 
