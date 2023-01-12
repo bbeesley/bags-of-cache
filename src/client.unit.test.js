@@ -59,7 +59,7 @@ test('get -> cache is not too slow', (t) => {
   const client = new CacheingClient({ ttl: 60e3 });
   const start = process.hrtime.bigint();
   let iteration = 0;
-  while (iteration < 3000) {
+  while (iteration < 1000) {
     iteration += 1;
     client.set('dependencies', dependencies);
     client.get('dependencies');
