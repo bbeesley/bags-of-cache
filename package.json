@@ -166,7 +166,7 @@
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
+    "@semantic-release/release-notes-generator": "^11.0.1",
     "@types/js-yaml": "^4.0.5",
     "@types/jsdom": "^20.0.1",
     "@types/sinon": "^10.0.13",
