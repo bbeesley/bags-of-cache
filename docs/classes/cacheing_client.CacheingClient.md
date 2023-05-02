@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v1.0.1](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
+[@beesley/bags-of-cache - v1.0.2](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
 
 # Class: CacheingClient
 
