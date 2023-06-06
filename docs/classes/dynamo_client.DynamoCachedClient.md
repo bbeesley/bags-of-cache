@@ -1,6 +1,6 @@
-[@beesley/bags-of-cache - v1.0.2](../README.md) / [Modules](../modules.md) / [dynamo-client](../modules/dynamo_client.md) / DynamoCachedClient
+[@beesley/bags-of-cache](../README.md) / [Modules](../modules.md) / [dynamo-client](../modules/dynamo_client.md) / DynamoCachedClient
 
-# Class: DynamoCachedClient
+# DynamoCachedClient
 
 [dynamo-client](../modules/dynamo_client.md).DynamoCachedClient
 
