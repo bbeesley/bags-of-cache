@@ -1,3 +1,5 @@
+## [1.0.7](https://github.com/bbeesley/bags-of-cache/compare/v1.0.6...v1.0.7) (2023-06-07)
+
 ## [1.0.6](https://github.com/bbeesley/bags-of-cache/compare/v1.0.5...v1.0.6) (2023-06-07)
 
 ## [1.0.5](https://github.com/bbeesley/bags-of-cache/compare/v1.0.4...v1.0.5) (2023-06-06)
