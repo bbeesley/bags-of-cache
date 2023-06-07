@@ -1,6 +1,6 @@
-[@beesley/bags-of-cache](../README.md) / [Modules](../modules.md) / index
+[@beesley/bags-of-cache - v1.0.5](../README.md) / [Modules](../modules.md) / index
 
-# index
+# Module: index
 
 ## Table of contents
 

@@ -1,6 +1,6 @@
-[@beesley/bags-of-cache](../README.md) / [Modules](../modules.md) / dynamo-client
+[@beesley/bags-of-cache - v1.0.5](../README.md) / [Modules](../modules.md) / dynamo-client
 
-# dynamo-client
+# Module: dynamo-client
 
 ## Table of contents
 
