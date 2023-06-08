@@ -1,6 +1,6 @@
-[@beesley/bags-of-cache - v1.0.7](README.md) / Modules
+[@beesley/bags-of-cache - v1.0.8](README.md) / Modules
 
-# @beesley/bags-of-cache - v1.0.7
+# @beesley/bags-of-cache - v1.0.8
 
 ## Table of contents
 
