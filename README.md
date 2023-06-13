@@ -72,13 +72,13 @@ const second = await memoised('one'); // this will be returned from the cache
 
 #### CacheingClient
 
-[src/cacheing-client.ts:16-107](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L16-L107 "Source code on GitHub")
+[src/cacheing-client.ts:16-107](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L16-L107 "Source code on GitHub")
 
 Base client used to create clients with in memory caches
 
 ##### get
 
-[src/cacheing-client.ts:46-49](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L46-L49 "Source code on GitHub")
+[src/cacheing-client.ts:46-49](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L46-L49 "Source code on GitHub")
 
 Gets an item in the cache
 
@@ -90,7 +90,7 @@ Returns **any** {\*}
 
 ##### memoise
 
-[src/cacheing-client.ts:59-71](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L59-L71 "Source code on GitHub")
+[src/cacheing-client.ts:59-71](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L59-L71 "Source code on GitHub")
 
 Memoises an arbitrary function using the cache
 
@@ -102,7 +102,7 @@ Returns **any** {T} Memoised version of the function
 
 ##### set
 
-[src/cacheing-client.ts:81-85](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L81-L85 "Source code on GitHub")
+[src/cacheing-client.ts:81-85](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L81-L85 "Source code on GitHub")
 
 Sets an item in the cache
 
@@ -116,7 +116,7 @@ Returns **void**&#x20;
 
 ##### stop
 
-[src/cacheing-client.ts:92-94](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L92-L94 "Source code on GitHub")
+[src/cacheing-client.ts:92-94](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L92-L94 "Source code on GitHub")
 
 Empties the cache
 
@@ -124,7 +124,7 @@ Returns **void**&#x20;
 
 ##### createCacheKey
 
-[src/cacheing-client.ts:104-106](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/cacheing-client.ts#L104-L106 "Source code on GitHub")
+[src/cacheing-client.ts:104-106](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/cacheing-client.ts#L104-L106 "Source code on GitHub")
 
 Util to serialise stuff to use as a cache key
 
@@ -189,7 +189,7 @@ const item = await client.getItem({
 
 #### emptyResponseCacheTime
 
-[src/dynamo-client.ts:23-23](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L23-L23 "Source code on GitHub")
+[src/dynamo-client.ts:23-23](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L23-L23 "Source code on GitHub")
 
 When we get no items back from a query we will not retry the query within this time (ms)
 
@@ -197,7 +197,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### queryConcurrency
 
-[src/dynamo-client.ts:30-30](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L30-L30 "Source code on GitHub")
+[src/dynamo-client.ts:30-30](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L30-L30 "Source code on GitHub")
 
 Limit concurrently sent queries to this value
 
@@ -205,7 +205,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### getConcurrency
 
-[src/dynamo-client.ts:37-37](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L37-L37 "Source code on GitHub")
+[src/dynamo-client.ts:37-37](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L37-L37 "Source code on GitHub")
 
 Limit concurrent getItem calls to this value
 
@@ -213,7 +213,7 @@ Type: [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Globa
 
 #### DynamoCachedClient
 
-[src/dynamo-client.ts:47-173](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L47-L173 "Source code on GitHub")
+[src/dynamo-client.ts:47-173](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L47-L173 "Source code on GitHub")
 
 **Extends CacheingClient**
 
@@ -221,7 +221,7 @@ Client for dynamo tables. Makes dynamo requests and caches the results.
 
 ##### getItem
 
-[src/dynamo-client.ts:82-109](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L82-L109 "Source code on GitHub")
+[src/dynamo-client.ts:82-109](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L82-L109 "Source code on GitHub")
 
 Gets a single item from the table by key and caches the result
 
@@ -233,7 +233,7 @@ Returns **any** {(Promise\<T | undefined>)}
 
 ##### query
 
-[src/dynamo-client.ts:119-133](https://github.com/bbeesley/bags-of-cache/blob/00004dbb912cdc5abbe9858e958ab713f7285e5e/src/dynamo-client.ts#L119-L133 "Source code on GitHub")
+[src/dynamo-client.ts:119-133](https://github.com/bbeesley/bags-of-cache/blob/fb01d789356461306baf5d453182ce7cba34641c/src/dynamo-client.ts#L119-L133 "Source code on GitHub")
 
 Sends an arbitrary dynamo query, cacheing the results
 
