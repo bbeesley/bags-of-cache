@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v1.0.18](../README.md) / [Modules](../modules.md) / index
+[@beesley/bags-of-cache - v1.0.19](../README.md) / [Modules](../modules.md) / index
 
 # Module: index
 
