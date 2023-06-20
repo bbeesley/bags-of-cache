@@ -1,6 +1,6 @@
 {
   "name": "@beesley/bags-of-cache",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "TTL based in memory cacheing util",
   "publishConfig": {
     "access": "public"
