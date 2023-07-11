@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v1.0.22](../README.md) / [Modules](../modules.md) / [dynamo-client](../modules/dynamo_client.md) / DynamoCachedClient
+[@beesley/bags-of-cache - v1.0.23](../README.md) / [Modules](../modules.md) / [dynamo-client](../modules/dynamo_client.md) / DynamoCachedClient
 
 # Class: DynamoCachedClient
 
@@ -67,7 +67,7 @@ DynamoCachedClient
 
 #### Defined in
 
-[dynamo-client.ts:61](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L61)
+[dynamo-client.ts:60](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L60)
 
 ## Properties
 
@@ -91,7 +91,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:48](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L48)
+[dynamo-client.ts:47](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L47)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:49](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L49)
+[dynamo-client.ts:48](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L48)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:50](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L50)
+[dynamo-client.ts:49](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L49)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:51](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L51)
+[dynamo-client.ts:50](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L50)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:52](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L52)
+[dynamo-client.ts:51](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L51)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[dynamo-client.ts:53](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L53)
+[dynamo-client.ts:52](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L52)
 
 ___
 
@@ -201,7 +201,7 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:104](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L104)
+[cacheing-client.ts:105](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L105)
 
 ___
 
@@ -267,7 +267,7 @@ DynamoCachedClient
 
 #### Defined in
 
-[dynamo-client.ts:82](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L82)
+[dynamo-client.ts:81](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L81)
 
 ___
 
@@ -339,7 +339,7 @@ DynamoCachedClient
 
 #### Defined in
 
-[dynamo-client.ts:119](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L119)
+[dynamo-client.ts:118](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L118)
 
 ___
 
@@ -373,7 +373,7 @@ DynamoCachedClient
 
 #### Defined in
 
-[dynamo-client.ts:144](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L144)
+[dynamo-client.ts:143](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L143)
 
 ___
 
@@ -405,7 +405,7 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:81](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L81)
+[cacheing-client.ts:82](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L82)
 
 ___
 
@@ -429,4 +429,4 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:92](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L92)
+[cacheing-client.ts:93](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L93)

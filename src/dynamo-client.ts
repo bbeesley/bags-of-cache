@@ -6,7 +6,6 @@ import {
   type QueryCommandInput,
 } from '@aws-sdk/lib-dynamodb';
 import PLimit, { type LimitFunction } from 'p-limit';
-
 import {
   CacheingClient,
   type CacheingClientParameters,

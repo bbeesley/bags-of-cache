@@ -5,7 +5,7 @@
     "declarationDir": "dist/types",
     "outDir": "dist/esm",
     "exactOptionalPropertyTypes": false,
-    "noUnusedParameters": false
+    "noUnusedParameters": false,
   },
   "include": ["src/**/*.ts", "src/*.ts"],
   "exclude": ["src/*.test.*", "src/**/*.test.*", "src/test/*.ts"],

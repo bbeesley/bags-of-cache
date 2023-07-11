@@ -39,3 +39,10 @@ jobs:
           npm run compile
       - name: test
         run: npm test
+      - name: dry run publish
+        if: ${{ inputs.is_main_branch == false }}
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GH_TOKEN: ${{ secrets.MY_PA_TOKEN }}
+        run: |
+          npm run release

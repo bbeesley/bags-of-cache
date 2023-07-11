@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v1.0.22](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
+[@beesley/bags-of-cache - v1.0.23](../README.md) / [Modules](../modules.md) / [cacheing-client](../modules/cacheing_client.md) / CacheingClient
 
 # Class: CacheingClient
 
@@ -112,7 +112,7 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:104](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L104)
+[cacheing-client.ts:105](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L105)
 
 ___
 
@@ -202,7 +202,7 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:81](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L81)
+[cacheing-client.ts:82](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L82)
 
 ___
 
@@ -222,4 +222,4 @@ CacheingClient
 
 #### Defined in
 
-[cacheing-client.ts:92](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L92)
+[cacheing-client.ts:93](https://github.com/bbeesley/bags-of-cache/blob/main/src/cacheing-client.ts#L93)

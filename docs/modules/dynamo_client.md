@@ -1,4 +1,4 @@
-[@beesley/bags-of-cache - v1.0.22](../README.md) / [Modules](../modules.md) / dynamo-client
+[@beesley/bags-of-cache - v1.0.23](../README.md) / [Modules](../modules.md) / dynamo-client
 
 # Module: dynamo-client
 
@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[dynamo-client.ts:15](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L15)
+[dynamo-client.ts:14](https://github.com/bbeesley/bags-of-cache/blob/main/src/dynamo-client.ts#L14)

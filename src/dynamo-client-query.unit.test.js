@@ -2,7 +2,6 @@ import ava from 'ava'; // eslint-disable-line ava/use-test
 import { mockClient } from 'aws-sdk-client-mock';
 import { QueryCommand, DynamoDBDocumentClient } from '@aws-sdk/lib-dynamodb';
 import delay from 'delay';
-
 import { DynamoCachedClient } from './dynamo-client.js';
 
 const { serial: test } = ava;

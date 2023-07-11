@@ -58,11 +58,12 @@ export class CacheingClient {
    */
   public memoise<T extends (...args: any[]) => Promise<any>>(fn: T): T {
     const memoisedFn = (async (...args: any[]) => {
-      const key = this.createCacheKey(...args);
+      const key = this.createCacheKey(...args); // eslint-disable-line @typescript-eslint/no-unsafe-argument
+
       const cached = this.get(key); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
       if (cached) return cached; // eslint-disable-line @typescript-eslint/no-unsafe-return
 
-      const response = await fn(...args); // eslint-disable-line @typescript-eslint/no-unsafe-assignment
+      const response = await fn(...args); // eslint-disable-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-argument
 
       this.set(key, response);
       return response; // eslint-disable-line @typescript-eslint/no-unsafe-return
