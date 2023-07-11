@@ -1,3 +1,10 @@
+## [1.0.23](https://github.com/bbeesley/bags-of-cache/compare/v1.0.22...v1.0.23) (2023-07-11)
+
+
+### Bug Fixes
+
+* ensure all build assets are packed ([cb30e78](https://github.com/bbeesley/bags-of-cache/commit/cb30e7836dededa3d0488a3f70bdc62ad51c2fa5))
+
 ## [1.0.22](https://github.com/bbeesley/bags-of-cache/compare/v1.0.21...v1.0.22) (2023-06-20)
 
 ## [1.0.21](https://github.com/bbeesley/bags-of-cache/compare/v1.0.20...v1.0.21) (2023-06-19)
