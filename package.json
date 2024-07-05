@@ -234,7 +234,7 @@
     "@aws-sdk/lib-dynamodb": "^3.369.0",
     "@aws-sdk/util-dynamodb": "^3.369.0",
     "@isaacs/ttlcache": "^1.4.1",
-    "p-limit": "^4.0.0"
+    "p-limit": "^6.0.0"
   },
   "ava": {
     "files": [
