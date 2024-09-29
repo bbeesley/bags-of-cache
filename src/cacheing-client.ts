@@ -1,5 +1,4 @@
 import { serialize, deserialize } from 'node:v8';
-import type { Buffer } from 'node:buffer';
 import TTLCache from '@isaacs/ttlcache';
 
 export type CacheingClientParameters = {
@@ -15,7 +14,7 @@ export type CacheingClientParameters = {
  */
 export class CacheingClient {
   public ttl: number;
-  protected cache: TTLCache<string, Buffer>;
+  protected cache: TTLCache<string, Uint8Array>;
   protected log: typeof console;
 
   /**

@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import * as url from 'node:url';
-import { resolve } from 'node:path';
+import path from 'node:path';
 import test from 'ava';
 import delay from 'delay';
 import sinon from 'sinon';
@@ -12,7 +12,7 @@ const dependencies = [];
 
 test.before(async () => {
   const fileContent = await readFile(
-    resolve(__dirname, '../package-lock.json'),
+    path.resolve(__dirname, '../package-lock.json'),
     {
       encoding: 'utf8',
     },
