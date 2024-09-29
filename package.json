@@ -159,7 +159,7 @@
     "@babel/preset-env": "^7.22.7",
     "@babel/preset-typescript": "^7.22.5",
     "@beesley/tsconfig": "^3.0.0",
-    "@commitlint/cli": "^18.0.0",
+    "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/commit-analyzer": "^13.0.0",
