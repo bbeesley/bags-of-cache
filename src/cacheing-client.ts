@@ -79,7 +79,7 @@ export class CacheingClient {
    * @memberof CacheingClient
    */
   public set(key: string, value: any, customTtl?: number): void {
-    this.cache.set(key, serialize(value), {
+    this.cache.set(key, new Uint8Array(serialize(value)), {
       ttl: customTtl,
     });
   }

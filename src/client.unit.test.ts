@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, import/no-named-as-default-member */
 import { readFile } from 'node:fs/promises';
 import * as url from 'node:url';
 import path from 'node:path';
@@ -8,7 +9,7 @@ import { CacheingClient } from './cacheing-client.js';
 
 const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
-const dependencies = [];
+const dependencies: any[] = [];
 
 test.before(async () => {
   const fileContent = await readFile(
@@ -108,7 +109,7 @@ test('memoise -> multiple args are factored into memo', async (t) => {
     async (arg, other) => `arg was ${arg}, other was ${other}`,
   );
   const memoised = client.memoise(fn);
-  const first = await memoised('one');
+  const first = await memoised('one', 'two');
   const second = await memoised('one', 'different');
   t.is(fn.callCount, 2);
   t.not(first, second);
